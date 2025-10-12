@@ -27,7 +27,8 @@ jobs:
           args: build --snapshot
         env:
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-          DESCRIPTION: http server for apple calendars.
+          DESCRIPTION: |
+            http server for apple calendars.
           HOMEBREW_REPO_NAME: homebrew-etc
 
   publish:
@@ -68,5 +69,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.github-app.outputs.token }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-          DESCRIPTION: http server for apple calendars.
+          DESCRIPTION: |
+            http server for apple calendars.
           HOMEBREW_REPO_NAME: homebrew-etc
