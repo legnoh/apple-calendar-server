@@ -17,7 +17,7 @@ changelog:
       - '^docs:'
       - '^test:'
 
-brews:
+homebrew_casks:
   - commit_author:
       name: goreleaserbot
       email: bot@goreleaser.com
@@ -32,15 +32,12 @@ brews:
     license: MIT
     skip_upload: auto
     dependencies:
-      - name: apple-calendar-server
-        os: mac
+      - formula: apple-calendar-cli
     service: |
       run [opt_bin/"{{ .ProjectName }}", "serve"]
       keep_alive true
       log_path var/"log/{{ .ProjectName }}.log"
       error_log_path var/"log/{{ .ProjectName }}.log"
-    test: |
-      system "#{bin}/{{ .ProjectName }} --help"
     repository:
       owner: "{{ .Env.GITHUB_REPOSITORY_OWNER }}"
       name: "{{ .Env.HOMEBREW_REPO_NAME }}"
