@@ -32,7 +32,7 @@ brews:
     license: MIT
     skip_upload: auto
     dependencies:
-      - name: apple-calendar-server
+      - name: apple-calendar-cli
         os: mac
     service: |
       run [opt_bin/"{{ .ProjectName }}", "serve"]
