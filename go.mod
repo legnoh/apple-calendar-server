@@ -1,6 +1,6 @@
 module github.com/legnoh/apple-calendar-server
 
-go 1.25.2
+go 1.26.1
 
 require (
 	github.com/alecthomas/kong v1.14.0
