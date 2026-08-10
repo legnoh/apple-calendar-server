@@ -3,7 +3,7 @@ module github.com/legnoh/apple-calendar-server
 go 1.26.5
 
 require (
-	github.com/alecthomas/kong v1.16.0
+	github.com/alecthomas/kong v1.16.1
 	github.com/alecthomas/kong-yaml v0.2.0
 )
 
